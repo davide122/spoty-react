@@ -1,9 +1,12 @@
-const ArtistPage = ()=>{
+import { useState } from "react"
+
+
+const ArtistPage = (id)=>{
     return(
         <div>
         <div className="row">
           <div className="col-12 col-md-10 col-lg-10 mt-5">
-            <h2 className="titleMain"/>
+            <h2 className={id.titleMain}/>
             <div id="followers" />
             <div className="d-flex justify-content-center" id="button-container">
               <button className="btn btn-success mr-2 mainButton d-none" id="playButton">

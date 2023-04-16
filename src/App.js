@@ -6,6 +6,7 @@ import MyMain from "./Component/MyMain.jsx"
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import ArtistPage from './Component/ArtistPage';
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +16,7 @@ function App() {
 
     <Routes>
 <Route path='/' element={<MyMain></MyMain>}/>
-<Route path='/artist' element={<ArtistPage></ArtistPage>}/>
+<Route path='/artist/:id' element={<ArtistPage></ArtistPage>}/>
     </Routes>
    
    
